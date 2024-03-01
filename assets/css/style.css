@@ -48,10 +48,6 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
 .hero {
     height: 800px;
     width: 100%;
@@ -76,6 +72,8 @@ p {
     display: inline-block;
     margin-left: 20px;
     margin-top: auto;
+    font-size: 16px;
+    overflow: auto;
 }
 
 .benefits {
