@@ -1,34 +1,40 @@
 * {
+    /* The * Element selects all elements, giving these properties to all affect elements */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
+    /* Affects all elements inside the body unless overwritten, here we have set the Default font, font color and background color. */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
     background-color: #d9dcd6;
 }
 
 .header {
+    /* The header is affecting the elements at the top of the webpage, which is the bar at the top including the name and the links. 
+    Setting a different Font for the elements. Also included overflow auto to stop the text from leaving the top bar if shrunk. */
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
     display: block;
     overflow: auto;
 }
 
 .header h1 {
+    /* This is setting the element to inline block so that the title and the links can all sit together on the same line and defining the title font size */
     display: inline-block;
     font-size: 48px;
 }
 
 .header h1 .seo {
+    /* This line Specifically sets the 'seo; portion of the Horiseon title to a slightly different color to emphasize on the company name. */
     color: #d9dcd6;
 }
 
 .header div {
+    /* this class is setting the spacing and font sizes for the links, its also floating them to the right side of the page. */
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -36,20 +42,26 @@ body {
 }
 
 .header div ul {
+    /* list-style-type is setting how a list will be displayed, such as numbers, icons or dots. We dont want anything displayed so we have set it to none. */
     list-style-type: none;
 }
 
 .header div ul li {
+    /* This class is displaying the elements as in inline block, allowing the list to flow along horizontally rather than list vertically.
+    Margin space set 25px to the left. Allowing to have space in between the links*/
     display: inline-block;
     margin-left: 25px;
 }
 
 a {
+    /* This is affecting a Elements, by setting the text decoration to none and overriding the color. We can remove the typical hyperlink format of blue/purple underlined text. */
     text-decoration: none;
     color: #ffffff;
 }
 
 .hero {
+    /* This class is setting our homepage background image. Setting a maximum height of 800px, but giving it 100% width allows it to span across the entire page.
+    Putting a margin on bottom allows for space between the image and our boxes below. We have also centered the image on the webpage. */
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -59,20 +71,25 @@ a {
 }
 
 .float-left {
+    /* This class assigns any element to it to be floating to the left hand side with a space of 25px beside it so that its not squished into the wall */
     float: left;
     margin-right: 25px;
 }
 
 .float-right {
+    /* This class assigns any element to it to be floating to the right hand side with a space of 25px beside it so that its not squished into the wall */
     float: right;
     margin-left: 25px;
 }
 
 .container {
+    /* This container allows the children inside the container to be flexed and not so squished up causing items to break out */
     display: flex;
 }
 
 .content {
+    /* This class sets the elements inside to all have the display of inline-block with a set font size and a minimum width
+    allowing for the page to scale. */
     display: inline-block;
     margin-left: 20px;
     margin-top: auto;
@@ -81,6 +98,8 @@ a {
 }
 
 .benefits {
+    /* This class adds margins to the elements so that they are not pushed up agains the content elements
+     and also not pushed up against the side of the webpage */
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
@@ -93,6 +112,7 @@ a {
 }
 
 .benefits img {
+    /* This class affects the img elements inside the benefits class. Setting a display type and a margin of 10px top and bottom and automatic for left and right. */
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -100,11 +120,14 @@ a {
 }
 
 .benefits h3 {
+    /* This class affects the h3 elements inside benefits class, putting text align to keep text in the middle and also to add a margin below to keep space on bottom of the page. */
     margin-bottom: 10px;
     text-align: center;
 }
 
 .page-elements {
+    /* This class is defining the attributes for the main 3 boxes on the pagem setting the background color and also having a margin bottom for space between themselves.
+    Padding adds space between the outside box and the inside, text and image.*/
     margin-bottom: 20px;
     padding: 50px;
     min-height: 300px;
@@ -112,15 +135,19 @@ a {
 }
 
 .page-elements img {
+    /* This class sets a maximum height of 200px for the images of the page element class */
     max-height: 200px;
 }
 
 .page-elements h2{
+    /* This sets the font size and a bottom margin for the h2 elements inside the page-elements class */
     margin-bottom: 20px;
     font-size: 36px;
 }
 
 .footer {
+    /* This class is assigned for the bottom element of the page, setting the font different from the default font, along with centering it and having a defined size. Also adding some padding to it
+    allowing it not to be squished by the other elements */
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
