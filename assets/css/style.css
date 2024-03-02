@@ -67,21 +67,25 @@ a {
     margin-left: 25px;
 }
 
+.container {
+    display: flex;
+}
+
 .content {
-    width: 75%;
     display: inline-block;
     margin-left: 20px;
     margin-top: auto;
+    min-width: 75%;
     font-size: 16px;
-    overflow: auto;
 }
 
 .benefits {
+    margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
     clear: both;
     float: right;
-    width: 20%;
+    min-width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
@@ -93,6 +97,7 @@ a {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+    min-width: 150px;
 }
 
 .benefits h3 {
@@ -100,28 +105,10 @@ a {
     text-align: center;
 }
 
-.search-engine-optimization {
+.page-elements {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    min-height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -131,34 +118,7 @@ a {
     max-height: 200px;
 }
 
-.page-elements {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
+.page-elements h2{
     margin-bottom: 20px;
     font-size: 36px;
 }
